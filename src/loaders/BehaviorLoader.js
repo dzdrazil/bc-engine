@@ -25,7 +25,7 @@ define(function(require, exports, module) {
         deferred.then(this.initializeBehaviors);
 
         elementMap.each(function(componentName, $domElements) {
-            require([componentPrefix + componentName], function(behaviorModule) {
+            require([componentPrefix + componentName + 'Behavior'], function(behaviorModule) {
                 resolvedComponents++;
 
                 _.each($domElements, function($domElement) {
