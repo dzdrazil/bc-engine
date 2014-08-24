@@ -1,19 +1,41 @@
-define(function(require) {
-    'use strict';
+define(
+    'bcengine',
+    [
+        './Engine',
+        './BCEngine',
+        './parsers/ElementMap',
+        './parsers/Parser',
+        './parsers/BehaviorParser',
+        './parsers/ComponentParser',
+        './loaders/Loader',
+        './loaders/BehaviorLoader'
+    ],
+    function(
+        Engine,
+        BCEngine,
+        ElementMap,
+        Parser,
+        BehaviorParser,
+        ComponentParser,
+        Loader,
+        BehaviorLoader
+    ) {
+        'use strict';
 
-    return {
-        // core
-        Engine: require('./Engine'),
-        BCEngine: require('./BCEngine'),
-        ElementMap: require('./parsers/ElementMap'),
+        return {
+            // core
+            Engine: Engine,
+            BCEngine: BCEngine,
+            ElementMap: ElementMap,
 
-        // parsers
-        Parser: require('./parsers/Parser'),
-        BehaviorParser: require('./parsers/BehaviorParser'),
-        ComponentParser: require('./parsers/ComponentParser'),
+            // parsers
+            Parser: Parser,
+            BehaviorParser: BehaviorParser,
+            ComponentParser: ComponentParser,
 
-        // loaders
-        Loader: require('./loaders/Loader'),
-        BehaviorLoader: require('./loaders/BehaviorLoader')
-    };
-});
+            // loaders
+            Loader: Loader,
+            BehaviorLoader: BehaviorLoader
+        };
+    }
+);

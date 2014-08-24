@@ -3,9 +3,11 @@ var rjs = require('requirejs');
 // core
 rjs.optimize(
     {
-        name: 'src/index',
+        name: 'bcengine',
+        baseUrl: 'src/',
         out: 'dist/bcengine.min.js',
         paths: {
+            bcengine: 'index',
             jquery: 'empty:',
             lodash: 'empty:',
             EventBus: 'empty:'
