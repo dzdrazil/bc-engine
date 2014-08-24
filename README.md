@@ -15,4 +15,4 @@ Dependencies:
 
 ## Usage
 
-See the [examples repository](https://github.com/dzdrazil/behavior-engine-examples) and the [wiki](wiki)
+See the [examples repository](https://github.com/dzdrazil/behavior-engine-examples) and the [wiki](https://github.com/dzdrazil/bc-engine/wiki)
